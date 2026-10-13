@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="olamiji.css">
+</head>
+<body>
+    <header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <!-- Put your logo file (gnlogo.png) in the same folder as this page -->
+      <img src="GN LOGO.png" alt="RCCG logo" onerror="this.style.display='none'">
+      <span><span id="navName">RCCG Goodnews Centre</span><small id="navSub"></small></span>
+    </a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#pastors">Pastors</a>
+      <a href="#excos">Excos</a>
+      <a href="#alumni">Alumni</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+ 
+<div class="hero" id="top">
+  <div class="wrap">
+    <img class="logo" src="GN LOGO.png" alt="RCCG logo" onerror="this.style.display='none'">
+    <h1 id="heroName"></h1>
+    <p class="tag" id="heroTag"></p>
+    <p class="verse" id="heroVerse"></p>
+    <a class="btn" href="#about">Welcome</a>
+  </div>
+</div>
+ 
+<section id="about">
+  <div class="wrap">
+    <h2 class="title">About Us</h2>
+    <p class="sub" id="aboutText"></p>
+    <div class="about-grid" id="aboutGrid"></div>
+  </div>
+</section>
+ 
+<section id="pastors">
+  <div class="wrap">
+    <h2 class="title">Our Pastors</h2>
+    <p class="sub">Click on a card to see full biodata.</p>
+    <div class="grid lead" id="pastorGrid"></div>
+  </div>
+</section>
+ 
+<section id="excos">
+  <div class="wrap">
+    <h2 class="title">Executives (Excos)</h2>
+    <p class="sub">The team serving faithfully in the house of God.</p>
+    <div class="grid" id="excoGrid"></div>
+  </div>
+</section>
+ 
+<section id="alumni">
+  <div class="wrap">
+    <h2 class="title">Alumni</h2>
+    <p class="sub">Former members and leaders who served with us.</p>
+    <div class="filters">
+      <input id="alSearch" type="search" placeholder="Search name or discipline...">
+      <select id="alSet"><option value="">All sets</option></select>
+    </div>
+    <div class="grid" id="alumniGrid"></div>
+    <p class="empty" id="alEmpty" hidden>No alumni match your search.</p>
+  </div>
+</section>
+ 
+<section id="contact">
+  <div class="wrap">
+    <h2 class="title">Contact Us</h2>
+    <p class="sub">We would love to hear from you.</p>
+    <div class="contact-box" id="contactBox"></div>
+  </div>
+</section>
+ 
+<footer>
+  <div class="wrap">&copy; <span id="year"></span> <span id="footName"></span>. All rights reserved.</div>
+</footer>
+ 
+<dialog id="modal">
+  <div class="m-head">
+    <div class="avatar" id="mAvatar"></div>
+    <h3 id="mName"></h3>
+    <p id="mRole"></p>
+  </div>
+  <div class="m-body">
+    <table id="mTable"></table>
+    <p class="m-bio" id="mBio"></p>
+  </div>
+  <button class="m-close" id="mClose">Close</button>
+</dialog>
+<script src="olamiji.js"></script>
+
+</body>
+</html>
